@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    overflow-y: scroll;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    color: grey;
+}
+
+.wrapper:hover .meme-title{
+    color: black;
+}
+
+.meme-item {
+    border-top: solid grey;
+}
+
+.meme-title {
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.meme-input {
+    appearance: none;
+    width: 0;
+    height: 0;    
+}
+
+.meme-hide {
+    display: none;
+}
+
+img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.meme-input:checked + .meme-hide,
+.meme-title:hover + .meme-hide {
+    display: block;
+}
+
+svg {
+    width: 0;
+    height: 0;
+    display: none;
+    float: right;
+}
+
+.wrapper:hover .svgP,
+.meme-title:hover .svgX {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+}
+
+.meme-title:hover .svgP {
+    width: 0;
+    height: 0;
+    display: none;
+}
