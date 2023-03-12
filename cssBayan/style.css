@@ -17,6 +17,7 @@ body {
 }
 
 .meme-item {
+    display: block;
     border-top: solid grey;
 }
 
